@@ -31,6 +31,8 @@ lvim.plugins = {
   "neovim/nvim-lspconfig",
   "mfussenegger/nvim-dap",
   "rcarriga/nvim-dap-ui",
+  "mellow-theme/mellow.nvim",
+  "tomasr/molokai",
   "elixir-tools/elixir-tools.nvim",
   "nvim-lua/plenary.nvim",
   "nvim-treesitter/nvim-treesitter",

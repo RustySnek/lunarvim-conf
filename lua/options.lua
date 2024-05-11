@@ -9,6 +9,7 @@ lvim.format_on_save = {
   timeout = 1000,
 }
 lvim.format_on_save = true
+lvim.colorscheme = "mellow"
 
 lvim.keys.normal_mode["ff"] = ":Telescope find_files<cr>"
 lvim.keys.normal_mode["fg"] = ":Telescope live_grep<cr>"
