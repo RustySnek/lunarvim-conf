@@ -20,16 +20,13 @@ lspconfig.lua_ls.setup {}
 lspconfig.tsserver.setup {}
 
 lspconfig.html.setup {
-  configurationSection = { "html", "css", "javascript" },
+  configurationSection = { "html", "css", "javascript", "heex" },
   capabilities = capabilities,
   embeddedLanguages = {
     css = true,
-    elixir = true,
-    heex = true,
-    eelixir = true,
     javascript = true
   },
-  filetypes = { "html", "heex", "elixir", "eelixir" },
+  filetypes = { "html" },
   provideFormatter = true,
   on_attach = general_on_attach
 
@@ -40,12 +37,9 @@ lspconfig.tailwindcss.setup {
   on_attach = general_on_attach,
   cmd = { "tailwindcss-language-server", "--stdio" },
   filetypes = {
-    "rust",
     "eelixir",
     "html-eex",
     "html",
-    "javascript",
-    "elixir",
     "heex",
   },
   settings = {

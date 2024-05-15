@@ -20,6 +20,7 @@ lvim.plugins = {
     version = "^4", -- Recommended
     lazy = false,   -- This plugin is already lazy
   },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   "saadparwaiz1/cmp_luasnip",
   "hrsh7th/cmp-nvim-lsp",
   "hrsh7th/cmp-buffer",
