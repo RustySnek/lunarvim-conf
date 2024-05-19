@@ -10,7 +10,7 @@ lvim.format_on_save = {
 }
 lvim.format_on_save = true
 lvim.colorscheme = "catppuccin"
-
+lvim.lsp.automatic_servers_installation = false
 lvim.keys.normal_mode["ff"] = ":Telescope find_files<cr>"
 lvim.keys.normal_mode["fg"] = ":Telescope live_grep<cr>"
 lvim.keys.normal_mode["fh"] = ":Telescope help_tags<cr>"
@@ -37,3 +37,5 @@ lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 lvim.builtin.treesitter.auto_install = true
+
+vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "rust-analyzer", "rust_analyzer" })
